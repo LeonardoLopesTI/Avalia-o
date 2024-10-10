@@ -46,6 +46,8 @@
     <Compile Include="..\..\..\..\OneDrive - SENAC - SP\Visual Studio 2022\07.10 Atividade\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
+    <Compile Include="Lista1.cs" />
+    <Compile Include="Lista2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
