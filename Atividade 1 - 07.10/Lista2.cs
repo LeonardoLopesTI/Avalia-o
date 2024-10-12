@@ -34,6 +34,21 @@ namespace Atividade_1___07._10
                 case 6:
                     exercicio6();
                     break;
+                case 7:
+                    exercicio7();
+                    break;
+                case 8:
+                    exercicio8();
+                    break;
+                case 9:
+                    exercicio9();
+                    break;
+                case 10:
+                    exercico10();
+                    break;
+                case 11:
+                    exercicio11();
+                    break;
 
             }
 
@@ -94,7 +109,7 @@ namespace Atividade_1___07._10
         }
         static void exercicio5()
         {
-            string Nome, Sexo, E_C, Tempo;
+            string Nome, Sexo, E_C;
             Console.WriteLine("Bem vindo,\nDigite seu nome:\n");
             Nome = Console.ReadLine();
             Console.WriteLine("Qual é o seu Gênero?\n");
@@ -113,7 +128,115 @@ namespace Atividade_1___07._10
         }
         static void exercicio6()
         {
+            int numero;
+            Console.WriteLine("Digite um número:\n");
+            numero = Convert.ToInt32(Console.ReadLine());
 
+            if (numero % 2 == 0)
+            {
+                Console.WriteLine("O número digitado é PAR!");
+            }
+            else
+            {
+                Console.WriteLine("O número digitado é ÍMPAR!");
+            }
+            Console.ReadKey();
+        }
+        static void exercicio7()
+        {
+            int A, B, C;
+            Console.WriteLine("Digite o Valor de A & C:\n");
+            A = Convert.ToInt32(Console.ReadLine());
+            B = Convert.ToInt32(Console.ReadLine());
+            if (A == B)
+            {
+                C = A + B;
+            }
+            else
+            {
+                C = A * B;
+            }
+            Console.WriteLine("O valor de C é:\n" + C);
+            Console.ReadLine();
+        }
+        static void exercicio8()
+        {
+            int numero, resultado;
+            Console.WriteLine("Digite um número:\n");
+            numero = Convert.ToInt32(Console.ReadLine());
+            if (numero > 0)
+            {
+                resultado = numero * 2;
+            }
+            else
+            {
+                resultado = numero * 3;
+            }
+            Console.WriteLine("O resultado é:\n" + resultado);
+            Console.ReadLine();
+        }
+        static void exercicio9()
+        {
+            int n1, n2, n3;
+            Console.WriteLine("Digite três números:\n");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            n2 = Convert.ToInt32(Console.ReadLine());
+            n3 = Convert.ToInt32(Console.ReadLine());
+            int[] numeros = { n1, n2, n3 };
+            Array.Sort(numeros);
+            Array.Reverse(numeros);
+
+            Console.Write("Os números em ordem descrescente são:\n");
+            foreach (int numero in numeros)
+            {
+                Console.WriteLine(numero);
+                Console.ReadKey();
+            }
+        }
+        static void exercico10()
+        {
+            int n1, n2, n3;
+            Console.WriteLine("Digite três números:\n");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            n2 = Convert.ToInt32(Console.ReadLine());
+            n3 = Convert.ToInt32(Console.ReadLine());
+            int[] numeros = { n1, n2, n3 };
+            Array.Reverse(numeros);
+            Array.Sort(numeros);
+
+            Console.Write("Os números em ordem crescente são:\n");
+            foreach (int numero in numeros)
+            {
+                Console.WriteLine(numero);
+                Console.ReadKey();
+            }
+        }
+        static void exercicio11()
+        {
+            int Inicio, Fim, Duração;
+            Console.WriteLine("Digite a hora de inicio do jogo:\n");
+            Inicio = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite a hora de fim do jogo:\n");
+            Fim = Convert.ToInt32(Console.ReadLine());
+            if (Fim >= Inicio)
+            {
+                Duração = Fim - Inicio;
+            }
+            else
+            {
+                Duração = (24 - Inicio) + Fim;
+            }
+            Console.WriteLine("A duração do jogo é: " + Duração + " horas");
+
+            if (Duração <= 24)
+            {
+                Console.WriteLine("Horas restantes até o limite de 24 horas: " + (24 - Duração));
+            }
+            else 
+            {
+                Console.WriteLine("Horas excedentes ao limite de 24 horas: " + (Duração - 24));
+            }
+            Console.ReadKey ();
         }
     }   
 }
