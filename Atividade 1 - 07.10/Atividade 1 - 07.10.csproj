@@ -48,6 +48,7 @@
     </Compile>
     <Compile Include="Lista1.cs" />
     <Compile Include="Lista2.cs" />
+    <Compile Include="Lista3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
