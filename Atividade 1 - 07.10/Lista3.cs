@@ -98,12 +98,20 @@ namespace Atividade_1___07._10
             {
                 soma += i;
             }
-            Console.WriteLine("A soma dps números ímpares de 1 a 5000 é:\n" +  soma);
+            Console.WriteLine("A soma dos números ímpares de 1 a 5000 é:\n" +  soma);
             Console.ReadKey();
         }
         private static void exercicio6()
         {
+            int numero;
+            Console.WriteLine("Digite um número:\n");
+            numero = Convert.ToInt32(Console.ReadLine());
 
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(numero + " x " + i + " = " + i * numero + "\n");
+            }
+            Console.ReadKey();
         }
     }
 }
