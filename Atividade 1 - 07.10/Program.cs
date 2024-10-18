@@ -35,7 +35,7 @@ namespace Atividade_1___07._10
                 case 5:
                     exercicio5();
                     break;
-
+                    
                 case 6:
                     exercicio6();
                     break;

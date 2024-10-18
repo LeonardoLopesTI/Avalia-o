@@ -12,7 +12,7 @@ namespace Atividade_1___07._10
     {
         public static void escolherExercicio()
         {
-            Console.WriteLine("Escolha o exercicio que deseja executar: ");
+            Console.WriteLine("Escolha o exercicio que deseja executar:\n\nExercício 1: Imprimir Número Maior que 20\r\n\r\nExercício 2: Verificar se Valor é Maior que 10\r\n\r\nExercício 3: Verificar se a Soma de A + B é Menor que C\r\n\r\nExercício 4: Soma de Dois Números e Verificação de Resultado\r\n\r\nExercício 5: Solicitar Tempo de Casamento com Base no Sexo e Estado Civil\r\n\r\nExercício 6: Verificar se um Número é Par ou Ímpar\r\n\r\nExercício 7: Cálculo com Dois Valores Inteiros A e B\r\n\r\nExercício 8: Dobro ou Triplo de um Número com Base em sua Sinalização\r\n\r\nExercício 9: Ordenar 3 Valores do Maior para o Menor\r\n\r\nExercício 10: Ordenar 3 Valores do Menor para o Maior\r\n\r\nExercício 11: Calcular Duração de um Jogo de Xadrez em Horas");
             int exercicio = Convert.ToInt32(Console.ReadLine());
             switch (exercicio)
             {

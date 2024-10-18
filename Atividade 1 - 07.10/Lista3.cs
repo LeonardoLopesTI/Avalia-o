@@ -10,7 +10,7 @@ namespace Atividade_1___07._10
     {
         public static void escolherExercicio()
         {
-            Console.WriteLine("Escolha o exercicio que deseja executar: ");
+            Console.WriteLine("Escolha o exercicio que deseja executar:\n\nExercício 1: Somar Três Valores Recebidos\r\n\r\nExercício 2: Calcular a Média de Quatro Notas\r\n\r\nExercício 3: Solicitar Nome até Ser \"João\"\r\n\r\nExercício 4: Contar Números Pares entre 35 e 98111\r\n\r\nExercício 5: Somar Números Ímpares de 1 até 5000\r\n\r\nExercício 6: Calcular e Mostrar a Tabuada de um Número");
             int exercicio = Convert.ToInt32(Console.ReadLine());
             switch (exercicio)
             {
